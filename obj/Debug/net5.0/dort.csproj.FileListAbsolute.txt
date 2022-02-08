@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.exe
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.deps.json
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.runtimeconfig.json
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.dll
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\ref\dort.dll
+C:\Users\Admin\Desktop\dort\bin\Debug\net5.0\dort.pdb
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.AssemblyInfo.cs
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.dll
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\ref\dort.dll
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.pdb
+C:\Users\Admin\Desktop\dort\obj\Debug\net5.0\dort.genruntimeconfig.cache
