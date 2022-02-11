@@ -19,7 +19,7 @@ namespace dort
             }
 
             watch.Start();
-
+/* bubbelsort
             for(int i = 0; i < intList.Count- 1; i++){
                 for(int j = 0; j < intList.Count -1; j++){
                     if(intList[j] > intList[j+1]){
@@ -29,7 +29,22 @@ namespace dort
                     }
                 }
             }
+*/
+/*
+            int first;
+            for (int i = 0; i < intList.Count - 1; i++){
 
+                first = i;
+
+                for(int j = first; j < intList.Count; j++){
+                    if (intList[j] < intList[first]){
+                        int a = intList[j];
+                        intList[j] = intList[first];
+                        intList[first] = a;
+                    }
+                }
+            }
+*/
             watch.Stop();
     
             foreach(int i in intList){

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\dort\\dort.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\sort\\dort.csproj",
       "projectName": "dort",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\dort\\dort.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\sort\\dort.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\dort\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\sort\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
