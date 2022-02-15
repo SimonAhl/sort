@@ -6,6 +6,38 @@ namespace dort
 {
     class Program
     {
+
+        static List<int> MergeSort(List<int> intList){
+            if(intList.Count <= 1)
+                return intList;
+            /*
+            List<int> firstHalf = new List<int>();
+            List<int> secondHalf = new List<int>();
+
+            List<int> doneList = new List<int>();
+            */
+
+            int[] secondHalf;
+            int[] doneList;
+
+            int mid = intList.Count / 2;
+
+            int[] firstHalf = new int[mid];
+            if(firstHalf.Length % 2 == 0){
+                secondHalf = new int[mid];
+            }else{
+                secondHalf = new int[mid + 1];
+            }
+
+            for(int i = 0; i < mid; i++){
+                firstHalf[i] = intList[i];
+            }
+
+            for (int i = mid; i < intList.Count; i++){
+                secondHalf[i - mid] = intList[i];
+            }
+
+        }
         static void Main(string[] args)
         {
             List<int> intList = new List<int>();
