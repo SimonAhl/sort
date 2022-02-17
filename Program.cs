@@ -1,43 +1,98 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace dort
 {
     class Program
     {
 
-        static List<int> MergeSort(List<int> intList){
-            if(intList.Count <= 1)
-                return intList;
-            /*
-            List<int> firstHalf = new List<int>();
-            List<int> secondHalf = new List<int>();
+        public static int[] mergeSort(int[] array)
+        {
+            int[] left;
+            int[] right;
+            int[] result = new int[array.Length];  
 
-            List<int> doneList = new List<int>();
-            */
+            if (array.Length <= 1)
+                return array;              
 
-            int[] secondHalf;
-            int[] doneList;
+            int midPoint = array.Length / 2;  
 
-            int mid = intList.Count / 2;
+            left = new int[midPoint];
+  
+            if (array.Length % 2 == 0)
+                right = new int[midPoint];  
 
-            int[] firstHalf = new int[mid];
-            if(firstHalf.Length % 2 == 0){
-                secondHalf = new int[mid];
-            }else{
-                secondHalf = new int[mid + 1];
-            }
+            else
+                right = new int[midPoint + 1];  
 
-            for(int i = 0; i < mid; i++){
-                firstHalf[i] = intList[i];
-            }
+            for (int i = 0; i < midPoint; i++)
+                left[i] = array[i];  
+  
+            int x = 0;
 
-            for (int i = mid; i < intList.Count; i++){
-                secondHalf[i - mid] = intList[i];
-            }
+            
+            for (int i = midPoint; i < array.Length; i++)
+            {
+                right[x] = array[i];
+                x++;
+            }  
 
+            left = mergeSort(left);
+ 
+            right = mergeSort(right);
+
+            result = merge(left, right);  
+            return result;
         }
+  
+
+        public static int[] merge(int[] left, int[] right)
+        {
+            int resultLength = right.Length + left.Length;
+            int[] result = new int[resultLength];
+
+            int indexLeft = 0, indexRight = 0, indexResult = 0;  
+
+            while (indexLeft < left.Length || indexRight < right.Length)
+            {
+
+                if (indexLeft < left.Length && indexRight < right.Length)  
+                {  
+
+                    if (left[indexLeft] <= right[indexRight])
+                    {
+                        result[indexResult] = left[indexLeft];
+                        indexLeft++;
+                        indexResult++;
+                    }
+
+                    else
+                    {
+                        result[indexResult] = right[indexRight];
+                        indexRight++;
+                        indexResult++;
+                    }
+                }
+
+                else if (indexLeft < left.Length)
+                {
+                    result[indexResult] = left[indexLeft];
+                    indexLeft++;
+                    indexResult++;
+                }
+
+                else if (indexRight < right.Length)
+                {
+                    result[indexResult] = right[indexRight];
+                    indexRight++;
+                    indexResult++;
+                }  
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
             List<int> intList = new List<int>();
@@ -62,7 +117,7 @@ namespace dort
                 }
             }
 */
-/*
+/* selectionsort
             int first;
             for (int i = 0; i < intList.Count - 1; i++){
 
@@ -76,6 +131,11 @@ namespace dort
                     }
                 }
             }
+*/
+/* mergesort
+            int[] intArr = intList.ToArray();
+            intArr = mergeSort(intArr);
+            intList = intArr.ToList();
 */
             watch.Stop();
     
